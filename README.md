@@ -19,3 +19,7 @@ A simple game of rock-paper-scissors where the program prompts the user for a nu
 ## Day 5
 ### PasswordGenerator.py
 Prompts the user to enter a number of letters, symbols, and numbers to generate a random password.
+
+## Day 6
+### Hangman.py
+A game of Hangman. The user will have six opportunities to guess the correct word randomly generated from a list of words.
