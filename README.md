@@ -23,3 +23,7 @@ Prompts the user to enter a number of letters, symbols, and numbers to generate 
 ## Day 6
 ### Hangman.py
 A game of Hangman. The user will have six opportunities to guess the correct word randomly generated from a list of words.
+
+## Day 7
+### CaesarCipher.py
+The Caesar cipher algorithm. Gives users the option to either decrypt or encrypt a given message. The message is then shifted by a given number of positions in the alphabet. This program also takes into account if the user enters a shift amount over the number of letters in the alphabet by continuing to shift the given amount.
