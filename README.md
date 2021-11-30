@@ -27,3 +27,7 @@ A game of Hangman. The user will have six opportunities to guess the correct wor
 ## Day 7
 ### CaesarCipher.py
 The Caesar cipher algorithm. Gives users the option to either decrypt or encrypt a given message. The message is then shifted by a given number of positions in the alphabet. This program also takes into account if the user enters a shift amount over the number of letters in the alphabet by continuing to shift the given amount.
+
+## Day 8
+### SilentAuction.py
+Simulates a silent auction. Prompts the user to enter a name and a bid, and then stores each name and bid inside a dictionary. The program then asks if there are any other bidders. If not, then the program terminates and determines a winner, which will be the person with the highest bid.
