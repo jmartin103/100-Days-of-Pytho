@@ -17,7 +17,7 @@ def main():
         bid = int(input('How much would you like to bid? $'))
         bidders[name] = bid
 
-        other_bidders = input('Are there any other bidders? ').lower()
+        other_bidders = input('Are there any other bidders? Type \'yes\' or \'no\' ').lower()
         if other_bidders == 'no':
             find_highest_bidder(bidders)
             break
