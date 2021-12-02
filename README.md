@@ -31,3 +31,7 @@ The Caesar cipher algorithm. Gives users the option to either decrypt or encrypt
 ## Day 8
 ### SilentAuction.py
 Simulates a silent auction. Prompts the user to enter a name and a bid, and then stores each name and bid inside a dictionary. The program then asks if there are any other bidders. If not, then the program terminates and determines a winner, which will be the person with the highest bid.
+
+## Day 9
+### Calculator.py
+A simple calculator to perform simple arithmetic operations.
