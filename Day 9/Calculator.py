@@ -14,7 +14,7 @@ def divide(num1, num2):
         print('ERROR: Can\'t divide by zero!')
 
 def main():
-    num1 = int(input('What is the first number? '))
+    num1 = float(input('What is the first number? '))
 
     operators = {
         '+': add,
@@ -27,7 +27,7 @@ def main():
         print(f'{op}')
 
     choice = input('Please choose an operator from above (+, -, *, or /): ')
-    num2 = int(input('What is the second number? '))
+    num2 = float(input('What is the second number? '))
     calc_function = operators[choice]
     result = calc_function(num1, num2)
     print(f'{num1} {choice} {num2} = {result}')
@@ -43,7 +43,7 @@ def main():
                 print(f'{op}')
 
             choice = input('Please choose an operation from above (+, -, *, or /): ')
-            num = int(input('What is the second number? '))
+            num = float(input('What is the second number? '))
             calc_function = operators[choice]
             prev_result = result
             result = calc_function(prev_result, num)
