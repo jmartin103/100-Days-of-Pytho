@@ -14,35 +14,39 @@ def divide(num1, num2):
         print('ERROR: Can\'t divide by zero!')
 
 def main():
-    operations = {
-        '+': 'Add',
-        '-': 'Subtract',
-        '*': 'Multiply',
-        '/': 'Divide'
-    }
-  
     num1 = int(input('What is the first number? '))
+
+    operators = {
+        '+': add,
+        '-': subtract,
+        '*': multiply,
+        '/': divide
+    }
+    
+    for op in operators:
+        print(f'{op}')
+
+    choice = input('Please choose an operator from above (+, -, *, or /): ')
     num2 = int(input('What is the second number? '))
+    calc_function = operators[choice]
+    result = calc_function(num1, num2)
+    print(f'{num1} {choice} {num2} = {result}')
 
-    for op in operations:
-        operation = operations[op]
-        print(f'{op}: {operation}')
-  
-    choice = input('Please choose an operation from above (+, -, *, or /): ')
+    calculate_again = 'y'
+    while calculate_again == 'y':
+        calculate_again = input('Would you like to perform another calculation? Type \'y\' or \'n\': ').lower()
+        if calculate_again == 'n':
+            print('Goodbye!')
+            break
+        else:
+            for op in operators:
+                print(f'{op}')
 
-    result = 0
-    if choice == '+':
-        result = add(num1, num2)
-        print(f'{num1} + {num2} = {result}')
-    elif choice == '-':
-        result = subtract(num1, num2)
-        print(f'{num1} - {num2} = {result}')
-    elif choice == '*':
-        result = multiply(num1, num2)
-        print(f'{num1} * {num2} = {result}')
-    elif choice == '/':
-        result = divide(num1, num2)
-        if num2 != 0:
-            print(f'{num1} / {num2} = {result}')
-  
+            choice = input('Please choose an operation from above (+, -, *, or /): ')
+            num = int(input('What is the second number? '))
+            calc_function = operators[choice]
+            prev_result = result
+            result = calc_function(prev_result, num)
+            print(f'{prev_result} {choice} {num} = {result}')
+            continue
 main()
