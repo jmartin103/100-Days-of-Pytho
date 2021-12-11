@@ -35,3 +35,7 @@ Simulates a silent auction. Prompts the user to enter a name and a bid, and then
 ## Day 9
 ### Calculator.py
 A simple calculator to perform simple arithmetic operations.
+
+## Day 10
+### Blackjack.py
+A game of Blackjack between a user and a computer.
