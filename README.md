@@ -39,3 +39,7 @@ A simple calculator to perform simple arithmetic operations.
 ## Day 10
 ### Blackjack.py
 A game of Blackjack between a user and a computer.
+
+## Day 11
+### GuessTheNumber.py
+Generates a random number between 1 and 100 that the user must guess. Depending on the difficulty chosen by the user, they will have 10 attempts to guess if user chooses easy; otherwise, 5 if they choose hard. If the user runs out of guesses, then the correct answer is revealed.
