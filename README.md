@@ -43,3 +43,7 @@ A game of Blackjack between a user and a computer.
 ## Day 11
 ### GuessTheNumber.py
 Generates a random number between 1 and 100 that the user must guess. Depending on the difficulty chosen by the user, they will have 10 attempts to guess if user chooses easy; otherwise, 5 if they choose hard. If the user runs out of guesses, then the correct answer is revealed.
+
+## Day 12
+### HigherLower.py
+Generates two random accounts from a given data set, GameData.py, and prompts the user to guess which account has more followers. If they get it right, they can resume playing until they get it wrong.
